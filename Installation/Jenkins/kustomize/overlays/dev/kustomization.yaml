@@ -5,3 +5,7 @@ resources:
 patches:
 - path: deployment-dev.yaml
 - path: service-dev.yaml
+- path: volume-dev.yaml
+- path: role-dev.yaml
+
+namespace: development
