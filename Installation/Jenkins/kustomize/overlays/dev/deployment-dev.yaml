@@ -2,3 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jenkins
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: jenkins-server
+  template:
+    metadata:
+      labels:
+        app: jenkins-server
