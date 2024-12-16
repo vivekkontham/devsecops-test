@@ -1,12 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../../base
+- ../../base/deployment.yaml
 patches:
 - path: deployment-dev.yaml
 # - path: service-dev.yaml
 # - path: volume-dev.yaml
 # - path: role-dev.yaml
-- path: namespace-dev.yaml
 
 namespace: development

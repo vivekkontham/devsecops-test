@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: jenkins
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: jenkins-server
@@ -11,3 +11,7 @@ spec:
     metadata:
       labels:
         app: jenkins-server
+    spec:
+      containers:
+        - name: jenkins
+          image: vivek
