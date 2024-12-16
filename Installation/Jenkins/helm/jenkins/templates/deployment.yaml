@@ -29,11 +29,10 @@ spec:
               containerPort: 8080
             - name: jnlpport
               containerPort: 50000
-          {{- with .Values.volumeMounts }}
           volumeMounts:
-            {{- toYaml . | nindent 12 }}
-          {{- end }}
-      {{- with .Values.volumes }} 
+              - name: jenkins-data
+                mountPath: /var/jenkins_home
       volumes:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
+          - name: jenkins-data
+            persistentVolumeClaim:
+                claimName: jenkins-pv-claim
