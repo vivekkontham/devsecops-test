@@ -1,17 +1,17 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: jenkins
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: jenkins-server
-  template:
-    metadata:
-      labels:
-        app: jenkins-server
-    spec:
-      containers:
-        - name: jenkins
-          image: vivek
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: jenkins
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: jenkins-server
+#   template:
+#     metadata:
+#       labels:
+#         app: jenkins-server
+#     spec:
+#       containers:
+#         - name: jenkins
+#           image: jenkins/jenkins:lts
