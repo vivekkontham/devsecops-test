@@ -4,7 +4,8 @@ image:
   repository: jenkins/jenkins
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
-  tag: "lts"
+  tag: "lts-jdk17"
+
 
 serviceAccount:
   name: jenkins-admin

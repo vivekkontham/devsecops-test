@@ -6,7 +6,7 @@ helm install jenkins-kubernetes jenkins --create-namespace
 
 helm install jenkins-kubernetes --namespace jenkins --create-namespace .
 
-gcloud compute firewall-rules create http-node-port     --allow tcp:32000
+gcloud compute firewall-rules create http-node-port     --allow tcp:30663,31479
 
 
 konthamvivek13@gmail.com

@@ -13,6 +13,9 @@ spec:
       labels:
         app: jenkins-server
     spec:
+      securityContext:
+        fsGroup: 1000
+        runAsUser: 1000
       serviceAccountName: "{{ .Values.serviceAccount.name }}"
       containers:
         - name: jenkins
