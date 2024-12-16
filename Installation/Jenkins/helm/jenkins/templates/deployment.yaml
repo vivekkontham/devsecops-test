@@ -15,7 +15,7 @@ spec:
     spec:
       securityContext:
         {{- toYaml .Values.PodSecurityContext | nindent 8 }}
-      serviceAccountName: {{ include "jenkins.serviceAccountName" . }}
+      serviceAccountName: {{ .Values.serviceAccountName.name }}
       containers:
         - name: jenkins
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
