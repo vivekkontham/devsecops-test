@@ -19,6 +19,7 @@ spec:
       containers:
         - name: jenkins
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          command: ["sh", "-c", "chown -R 1000:1000 /var/jenkins_home"]
           resources:
             limits:
               memory: "2Gi"
