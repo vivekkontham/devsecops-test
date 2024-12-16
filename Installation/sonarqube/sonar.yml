@@ -415,41 +415,6 @@ spec:
       automountServiceAccountToken: false
       securityContext:
         fsGroup: 0
-      initContainers:
-        - name: "wait-for-db"
-          image: sonarqube:10.8.0-community
-          imagePullPolicy: IfNotPresent
-          securityContext:
-            allowPrivilegeEscalation: false
-            capabilities:
-              drop:
-              - ALL
-            readOnlyRootFilesystem: true
-            runAsGroup: 0
-            runAsNonRoot: true
-            runAsUser: 1000
-            seccompProfile:
-              type: RuntimeDefault
-          command: ["/bin/bash", "-c"]
-          args: ['set -o pipefail;for i in {1..200};do (echo > /dev/tcp/release-name-postgresql/5432) && exit 0; sleep 2;done; exit 1']
-        - name: init-sysctl
-          image: sonarqube:10.8.0-community
-          imagePullPolicy: IfNotPresent
-          securityContext:
-            privileged: true
-            readOnlyRootFilesystem: true
-            runAsUser: 0
-          command: ["/bin/bash", "-e", "/tmp/scripts/init_sysctl.sh"]
-          volumeMounts:
-            - name: init-sysctl
-              mountPath: /tmp/scripts/
-          env:
-            - name: SONAR_WEB_CONTEXT
-              value: /
-            - name: SONAR_WEB_JAVAOPTS
-              value: ""
-            - name: SONAR_CE_JAVAOPTS
-              value: ""
       containers:
         - name: sonarqube
           image: sonarqube:10.8.0-community
