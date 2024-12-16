@@ -109,6 +109,8 @@ data:
         fi
       fi
     fi
+  node.store.allow_mmap: false
+  index.store.type: niofs
 ---
 # Source: sonarqube/templates/install-plugins.yaml
 apiVersion: v1
