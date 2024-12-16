@@ -18,7 +18,8 @@ volumes:
 
 volumeMounts:
   - name: jenkins-data
-    mountPath: /var/jenkins_home
+    mountPath: /var
+    subPath: jenkins_home
 
 
 namespace:
