@@ -5,3 +5,5 @@ kustomize build overlays/dev
 helm install jenkins-kubernetes jenkins --create-namespace
 
 helm install jenkins-kubernetes --namespace jenkins --create-namespace .
+
+gcloud compute firewall-rules create test-node-port     --allow tcp:32000
