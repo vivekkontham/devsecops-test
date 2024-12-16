@@ -7,5 +7,6 @@ patches:
 # - path: service-dev.yaml
 # - path: volume-dev.yaml
 # - path: role-dev.yaml
+- path: namespace-dev.yaml
 
 namespace: development
