@@ -13,13 +13,10 @@ spec:
       labels:
         app: jenkins-server
     spec:
-      securityContext:
-        {{- toYaml .Values.PodSecurityContext | nindent 8 }}
       serviceAccountName: "{{ .Values.serviceAccount.name }}"
       containers:
         - name: jenkins
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          command: ["sh", "-c", "chown -R 1000:1000 /var/jenkins_home"]
           resources:
             limits:
               memory: "2Gi"

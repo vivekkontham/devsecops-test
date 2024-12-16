@@ -11,10 +11,6 @@ serviceAccount:
 
 
 
-podSecurityContext:
-  fsGroup: 1000
-  runAsUser: 1000
-
 volumes:
   - name: jenkins-data
     persistentVolumeClaim:
