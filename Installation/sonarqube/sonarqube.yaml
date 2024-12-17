@@ -80,11 +80,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: sonarqube
+      app: sonar
   template:
     metadata:
       labels:
-        name: sonarqube
+        app: sonar
     spec:
       containers:
         - name: sonarqube
