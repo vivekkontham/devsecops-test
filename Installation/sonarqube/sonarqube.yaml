@@ -27,7 +27,7 @@ spec:
   template:
     selector:
       matchLabels:
-        app: sonar-postgres
+        name: sonar-postgres
     metadata:
       name: sonar-postgres
       labels:
@@ -80,7 +80,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sonarqube
+      name: sonarqube
   template:
     metadata:
       name: sonarqube
