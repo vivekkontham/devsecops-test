@@ -24,10 +24,10 @@ metadata:
   name: sonar-postgres
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      name: sonar-postgres
   template:
-    selector:
-      matchLabels:
-        name: sonar-postgres
     metadata:
       name: sonar-postgres
       labels:
