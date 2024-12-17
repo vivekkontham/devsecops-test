@@ -83,15 +83,14 @@ spec:
       name: sonarqube
   template:
     metadata:
-      name: sonarqube
       labels:
         name: sonarqube
     spec:
       containers:
-        - image: sonarqube:latest
+        - name: sonarqube
+          image: sonarqube:latest
           args:
             - -Dsonar.web.context=/sonar
-          name: sonarqube
           env:
             - name: SONARQUBE_JDBC_PASSWORD
               valueFrom:
