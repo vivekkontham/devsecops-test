@@ -8,7 +8,12 @@
 3) Create Application Pipleine ( Artifact regsitry , container regsitry, trivy, SAST, SCA ,DAST) 
 4) Create Deploy Pipeline 
 
-5) Kyverno , Network polices ,istio ,argocd,Helm,Kustomize 
+5) Kyverno , Network polices ,istio ,argocd,Helm,Kustomize ,configsync 
 
 
 Terraform 
+
+
+
+-----------
+Installation Pending : configsync,istio,kyverno
