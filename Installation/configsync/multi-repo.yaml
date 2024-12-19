@@ -1,0 +1,10 @@
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+    name: config-management
+spec:
+  enableMultiRepo: true
+                # Unique across all clusters using the same ConfigSync repo. Name is used in Cluster Selectors
+  clusterName: devsecops
+  preventDrift: true
+                #
