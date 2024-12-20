@@ -3,5 +3,5 @@ kind: ConfigManagement
 metadata:
     name: config-management
 spec:
-  clusterName: gke_stable-snowfall-444408-b7_asia-south1_devsecops
+  clusterName: devsecops
   enableMultiRepo: true
