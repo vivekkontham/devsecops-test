@@ -1,47 +1,30 @@
-# Installing Config Sync manually
 
-This document is a guide on how to manually install Config Sync on a Kubernetes
-cluster.
 
-This document includes configurations for some common user journeys, but is not
-an exhaustive list of how a Config Sync installation can be customized.
+gsutil cp gs://config-management-release/released/latest/config-management-operator.yaml config-management-operator.yaml
 
-## Pre-requisites
 
-This guide requires the following command line tools:
+kubectl create secret generic git-creds \
+  --namespace=config-management-system \
+  --from-literal=username=vivekkontham \
+  --from-literal=token=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
 
-- [kubectl](https://kubernetes.io/docs/tasks/tools/)
-- [kustomize](https://github.com/kubernetes-sigs/kustomize)
+  
 
-## Rendering the installation manifest
+kubectl create secret generic git-creds \
+  --namespace=dso \
+  --from-literal=username=vivekkontham \
+  --from-literal=token=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
 
-A [kustomization file](kustomization.yaml) is provided in this directory with
-some common use cases commented out. Edit the kustomization file accordingly for
-any desired customizations before installing.
 
-Once the kustomization file is ready, the manifests can be rendered using `kustomize`:
+https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/cluster-scoped-objects#configure_a_subset_of_clusters 
 
-```shell
-kustomize build . > config-sync-install.yaml
-```
 
-The rendered manifests are now written to the `config-sync-install.yaml` file. This
-file may be inspected/reviewed before applying to the cluster.
+https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/multiple-repositories
 
-Optional: If you want Config Sync deployments to use a private registry
-rather than the default registry, the following command can be used to replace
-the image URLs for all deployments:
 
-```shell
-kustomize build . | sed -e "s|gcr.io/config-management-release/|[*REGISTRY*]/|g" > config-sync-install.yaml
-```
+/home/riashivani9/devsecops-test/Installation/configsync/namespacerepo/namespaceconfig/applications/namespace/deployment/overlay-dso/kustomize build . --enable-helm
 
-### Apply the manifest to the cluster
 
-Once you are ready to apply the manifests to the cluster and install Config Sync,
-the manifests can be applied directly with `kubectl`:
+https://github.com/vivekkontham/namespacerepo 
 
-```shell
-kubectl apply -f config-sync-install.yaml
-```
-
+https://github.com/vivekkontham/root-repo
