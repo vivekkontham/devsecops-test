@@ -34,7 +34,7 @@ spec:
         name: sonar-postgres
     spec:
       containers:
-        - image: postgres:latest
+        - image: bitnami/postgresql
           name: sonar-postgres
           env:
             - name: POSTGRES_PASSWORD
@@ -87,7 +87,7 @@ spec:
     spec:
       containers:
         - name: sonarqube
-          image: bitnami/postgresql
+          image: sonarqube
           args:
             - -Dsonar.web.context=/sonar
           env:
