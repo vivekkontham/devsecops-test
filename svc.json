@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "stable-snowfall-444408-b7",
+  "private_key_id": "257fce816c0eb7e6eec612ea6ed0cc39b2e0c1bc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDNaTxPRPSNkIMJ\n0hwQmWHDxKTFUSmXTtCM2TBEAhXHmfh4mSu0YHDjau4KdEMJHlmU5VBFN/xvOIpw\n3mtIa4oqEUMFeRfkNA73lgtAS8zUDncVbZMQMJkxaYcjqaO+PAEqpcAjC2kNo9j5\nEB8z3U7QYxQpVougAGbnI9EuSOGzc3yTVu5FeO5QHUtnjvaurK1MqQt5y6sXoHsE\n6n1Rtud2IfsePQFzknYyKjDct0Pp9NpzbvZ4LC+eqKXzabgVPpi84XlYNKEkQpxa\nxuJqUM5kjP13UjQfc+qrHivPdB1h+c4CRjCXpFEXMadLglADqlBtIGLJV14zEu7k\n4Sz21XTNAgMBAAECggEACMt2r5YuOllzotoCJZvLmcwzmdctxrKzLzSlYmQMdq1a\n/B7ixihS7QnJA12S+TL5duySkUQiZMiw9MAxK7qfAcoXaoaSxUyNT4B3Htuf+3xb\nEOnOICVUic8Q4DAFOMHs8tyB634zk0fupEtSarARDc8QL+zqsYES5tabwDWSpFI7\n06ygZNarMjUGDkneDp46h5+tf9IAxrO3jkbI1qxSvBIIfH+VpxlRKjelUTZaV6yT\nMAPA4MQv0Tb6ovLJgS7s7z2tP8uoeJBFDkRIrrVFqx9c8kf5GrMW+bgzFhqhuukS\n6sekXJGofwM4wTIO96dJ0nkS/AEu7z740/OikfWiAQKBgQD3b+ZAeiwPHMUpqlb8\numJTqs29tdTeR5/3lwOMYOTFx33TvjdtNsSJJcWxLKw/p2WNHr7Vey4abJ4/u5Wl\nkcbsj0zE4sgYtSKkIW6qxe0LcgIztbqvkncBSWFJauzrR2RyUa2/cEuhmXRReCnY\nrexRFGytN3F46D/RLdNNMM4wQQKBgQDUhQSnF3lj9L0C9xFDFDIo7WDy8XGLm5bX\ni/pdApi1caCi2y4Sn8uHo8P4lZ2T279k/2P1g44thKAI/Ag3X9jqkPgasBhkSRq2\nfLwfSJ0FgvYSaQML4RZN2Mfw9lgidBnYJSPsqf2JqNPMwWPDoc6mUyVvZ4zy8CXE\nOO2HreyhjQKBgQCMHxE8KDN1J2y7yJvUKNRv3wT9zs/KRLNhKWK4B1Lmca9ezpRi\nw6YOqJZIXCz7KxfGD8gv6r7T9fizzM3U4jXNVuU5hdecrk78tXYPPWCcn6aBlAMx\nU/cSgnSWd/fM0TQfzQNgqv4ZeGY3kJ3Z97wgujlE6mXW+2bQVWwYhW/uQQKBgEyT\nzdRjugMRihYKbvbrzRNATgHcjFyQ6O6sar+fEuW2lvp33gcp+03Z7eCiENDZiwLa\nn+s0x0ORmZUDM/a4G9KSAESllXR1fyGomqTvJl15DjAeFNHv/nh4l7s1GRb5HOLs\npyA9NLWo1wDd4pP4txzpswCMoJZdgE5PcQ/F1RF1AoGBAIt+Eg0eoqWWdQQB0URg\nW7KPMmBM245I3FhV5xmdC/WcGOuknSEIJQOqtZ81gOTB3rxzhDdA5mulhLn7Xdpx\nKl68R9xTlgf7YweyZMn6U1oWWWcbv8cQnbEyBPjmsyJp/Ocs2N9neEWkOLEmH+KJ\nPBfokjBx+0hdt4GU/BBh9Y6g\n-----END PRIVATE KEY-----\n",
+  "client_email": "testargocd@stable-snowfall-444408-b7.iam.gserviceaccount.com",
+  "client_id": "108669507440052385062",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/testargocd%40stable-snowfall-444408-b7.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
