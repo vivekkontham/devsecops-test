@@ -1,20 +1,15 @@
-
-
-
-
-ot-sync.yaml
 apiVersion: configsync.gke.io/v1beta1
 kind: RootSync
 metadata:
     name: rootsync
-        namespace: config-management-system
-        spec:
-            sourceType: git
-                sourceFormat: unstructured
-                    git:
-                          repo: https://github.com/vivekkontham/root-repo.git
-                                branch: main
-                                      dir: root-config
-                                            auth: token
-                                                  secretRef:
-                                                          name: git-creds
+    namespace: config-management-system
+spec:
+  sourceType: git
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/vivekkontham/root-repo.git
+    branch: dev
+    dir: root-config
+    auth: token
+    secretRef:
+      name: git-creds
