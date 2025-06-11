@@ -1,11 +1,37 @@
-Install Helm,git and Kubectl
+
+
+## 🚀 Installing Helm, kubectl, and Git on Ubuntu/Debian
+
+Use the following commands to install **Helm**, **kubectl**, and **Git** on a Debian-based system like Ubuntu:
+
+### 📥 Step 1: Add Helm GPG Key and Repository
+
+```bash
 curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+```
+
+```bash
 sudo apt-get install apt-transport-https --yes
+```
+
+```bash
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+```
+
+### 🔄 Step 2: Update Package List
+
+```bash
 sudo apt-get update
+```
+
+### 🧰 Step 3: Install Tools
+
+```bash
 sudo apt-get install helm
 sudo apt-get install kubectl
 sudo apt-get install git
+```
+
 
 
 
